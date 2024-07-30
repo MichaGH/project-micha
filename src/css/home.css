@@ -1,0 +1,154 @@
+.main-plate {
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  height: 25rem;
+  margin: 4rem auto;
+  outline: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.main-plate .item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-plate .item h2 {
+  text-align: center;
+  padding: 30px;
+}
+.main-plate .item.a {
+  background-color: #111;
+  color: white;
+}
+.main-plate .item.b {
+  background-image: url("../images/home/main_panel_mom.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 45rem) {
+  .main-plate {
+    flex-direction: column;
+    height: 50rem;
+    width: 25rem;
+  }
+}
+.second-plate {
+  width: 50rem;
+  margin: auto;
+}
+.second-plate > h2 {
+  background-color: #111;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+.second-plate .second-plate-panel {
+  display: flex;
+  justify-content: space-between;
+}
+.second-plate .second-plate-panel .panel-item {
+  width: 14.5rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.second-plate .second-plate-panel .panel-item h3, .second-plate .second-plate-panel .panel-item h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.second-plate .second-plate-panel .panel-item h3 {
+  color: white;
+  padding: 15px;
+}
+.second-plate .second-plate-panel .panel-item h4 {
+  background: rgba(17, 17, 17, 0.8);
+  color: white;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-plate .second-plate-panel .panel-item.a {
+  background-image: url("../images/home/second_panel/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.second-plate .second-plate-panel .panel-item.b {
+  background-image: url("../images/home/second_panel/2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.second-plate .second-plate-panel .panel-item.c {
+  background-image: url("../images/home/second_panel/3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.third-plate {
+  width: 50rem;
+  margin: auto;
+}
+.third-plate > h2 {
+  background-color: #111;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+.third-plate .third-plate-panel {
+  width: 50rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.third-plate .third-plate-panel .panel-item {
+  width: 24rem;
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third-plate .third-plate-panel h3 {
+  margin: 0;
+  padding: 0;
+  background: rgba(17, 17, 17, 0.8);
+  color: white;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  padding: 30px;
+  border: 4px solid #222831;
+}
+.third-plate .third-plate-panel .panel-item.a {
+  background-image: url("../images/home/third_panel/1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.third-plate .third-plate-panel .panel-item.b {
+  background-image: url("../images/home/third_panel/2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.third-plate .third-plate-panel .panel-item.c {
+  background-image: url("../images/home/third_panel/3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.third-plate .third-plate-panel .panel-item.d {
+  background-image: url("../images/home/third_panel/4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=home.css.map */

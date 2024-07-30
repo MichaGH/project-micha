@@ -1,0 +1,81 @@
+@import '__variables';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+    margin:             0;
+    padding:            0;
+    background-color:   $bgColor;
+
+}
+
+
+//! Header and Navbar 
+header {
+    max-width:  $headerWidth;
+    margin:     auto;
+
+    /* Header Part */
+    .header-bar {
+        display:                flex;
+        justify-content:        space-evenly;
+        background-color:       none;
+
+        .header-title, .header-slogan {
+            display:            flex;
+            justify-content:    center;
+            align-items:        center;
+        }
+
+        .header-title {
+            color:                      $pageTitleColor;
+            font-size:                  $headerTitleFontSize;
+            background:                 -webkit-linear-gradient(#008de4, #3A4750);
+            -webkit-background-clip:    text;
+            -webkit-text-fill-color:    transparent;
+        }
+
+        .header-slogan {
+            color:              $pageSloganColor;
+            font-size:          $headerSloganFontSize;
+        }
+    }
+
+    /* Navigation Bar Part */
+    nav {
+        /* Sizing and centering */
+        display:                flex;
+        justify-content:        center;
+        align-items:            center;
+
+        a {
+            /* Sizing and centering */
+            flex:               1;
+            display:            flex;
+            justify-content:    center;
+            align-items:        center;
+            height:             100%;
+            padding:            $navbarPadding 0;
+
+
+            /* Styling */
+            text-decoration:    none;
+            background-color:   $primaryColor;
+            color:              $primaryInverse;
+            font-size:          $navbarFontSize;
+            font-weight:        $navbarFontWeight;
+            transition:         0.3s;
+        }
+
+        a:hover {
+            background-color:   $primaryHoverColor;
+            color:              $primaryHoverInverse;
+
+        }
+    }
+
+
+}

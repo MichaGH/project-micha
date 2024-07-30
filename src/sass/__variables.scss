@@ -1,0 +1,80 @@
+//! GENERAL COLORING
+$primaryColor:          #111;
+$primaryInverse:        white;
+$primaryHoverColor:     #8d64ff;
+$primaryHoverInverse:   white;
+
+$secondaryColor:        #222831;
+$secondaryInverse:      $primaryColor;
+
+$tertiaryColor:         #303841;
+$tertiaryInverse:       #ffffff;
+
+$quarteryColor:         #ff0000; 
+$quarteryInverse:       #ffffff;
+
+$bgColor:               #eeeeee;
+
+$pageTitleColor:        $secondaryColor;
+$pageSloganColor:       $secondaryColor;
+
+//! for root layout
+// HEADER
+$headerTitleFontSize:   2rem;
+$headerSloganFontSize:  1.4rem;
+
+// NAVBAR
+$navbarFontSize:        1.2rem;
+$navbarHeight:          2rem;
+$navbarPadding:         10px;
+$navbarFontWeight:      900;
+
+//! home page
+// GENERAL PANEL STYLING AND SIZING
+$panelTitleFontSize:    2rem;
+$panelTitlePadding:     20px;
+
+// FIRST PANEL
+
+// SECOND PANEL
+
+// THIRD PANEL
+
+
+$test1: rgba(0, 255, 0, 0.08);
+$test2: rgba(255, 0, 0, 0.08);
+
+// ! ROOT LAYOUT
+// Header and navbar width
+$headerWidth:               50rem;
+
+// ! Home 
+// general
+$plateTitleContentDiff:     10px; // space between title and content div
+$plateTitleHeight:          20px;
+
+// main plate
+$mainPlateItemSize:         calc($headerWidth / 2);
+$mainPlateImageUrl:         '../images/home/main_panel_mom.png';
+
+
+// secondary panel
+$secondPlateWidth:          calc(2*$mainPlateItemSize);
+$secondPlateUrl1:           '../images/home/second_panel/1.jpg';
+$secondPlateUrl2:           '../images/home/second_panel/2.jpg';
+$secondPlateUrl3:           '../images/home/second_panel/3.jpg';
+
+$secondPanelTitleTextColor: white;
+$secondPanelTitleBgColor:   rgba(0,0,0,1);
+
+$secondPanelDescTextColor: white;
+$secondPanelDescBgColor:   rgba(0,0,0,0.5);
+
+// tertiary panel
+
+$thirdPlateWidth:           $secondPlateWidth;
+
+$thirdPlateUrl1:            '../images/home/third_panel/1.jpg';
+$thirdPlateUrl2:            '../images/home/third_panel/2.jpg';
+$thirdPlateUrl3:            '../images/home/third_panel/3.jpg';
+$thirdPlateUrl4:            '../images/home/third_panel/4.jpg';

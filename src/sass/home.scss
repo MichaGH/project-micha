@@ -1,0 +1,186 @@
+@import '__variables';
+.main-plate {
+    display:                    flex;
+    flex-direction:             row;
+    width:                      calc(2*$mainPlateItemSize);
+    height:                     $mainPlateItemSize;
+    margin:                     4rem auto;
+    outline:                    1px solid black;
+    background-color:           rgba(0,0,0, 0.1);
+
+    .item {
+        flex:                   1;
+        display:                flex;
+        justify-content:        center;
+        align-items:            center;
+
+        h2 {
+            text-align:         center;
+            padding:            30px;
+        }
+    }
+
+    .item.a {
+        background-color:       $primaryColor;
+        color:                  $primaryInverse;
+    }
+
+    .item.b {
+        background-image:       url($mainPlateImageUrl);
+        background-position:    center;
+        background-size:        cover;
+    }
+
+
+}
+
+@media screen and (max-width: 45rem){
+    .main-plate {
+        flex-direction:     column;
+        height:             calc(2*$mainPlateItemSize);
+        width:              $mainPlateItemSize;
+    }
+}
+
+//! SECOND PLATE
+.second-plate {
+
+    width:      $secondPlateWidth;
+    margin:     auto;
+
+    > h2 {
+        background-color:       $primaryColor;
+        color:                  $primaryInverse;
+        font-size:              $panelTitleFontSize;
+        padding:                $panelTitlePadding;
+
+        text-align:             center;
+    }
+
+    .second-plate-panel {
+        display:                flex;
+        justify-content:        space-between;
+
+        .panel-item{
+            width:              calc($secondPlateWidth*0.29);
+            aspect-ratio:       1/1;
+            
+
+            display:            flex;
+            flex-direction:     column;
+            gap:                50px;
+
+            h3, h4{
+
+                text-align:     center;
+                margin:         0;
+                padding:        0;
+            }
+
+            h3 {
+                color: $primaryInverse;
+                padding: 15px;
+            }
+
+            h4 {
+                background: rgba($primaryColor, 0.8);
+                color: $primaryInverse;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 2.5px );
+                -webkit-backdrop-filter: blur( 2.5px );
+                padding: 10px 0;
+                display:                flex;
+                justify-content:        center;
+                align-items:            center;
+            }
+        }
+
+        .panel-item.a {
+            background-image:           url($secondPlateUrl1);
+            background-position:        center;
+            background-size:            cover;
+        }
+        .panel-item.b {
+            background-image:           url($secondPlateUrl2);
+            background-position:        center;
+            background-size:            cover;
+        }
+        .panel-item.c {
+            background-image:           url($secondPlateUrl3);
+            background-position:        center;
+            background-size:            cover;
+        }
+    }
+}
+
+// !THIRD PLATE
+
+.third-plate {
+    width:      $thirdPlateWidth;
+    margin:     auto;
+
+
+    > h2 {
+        background-color:   $primaryColor;
+        color:              $primaryInverse;
+        font-size:          $panelTitleFontSize;
+        padding:            $panelTitlePadding;
+        text-align:         center;
+
+    }
+
+    .third-plate-panel {
+        width:              $thirdPlateWidth;
+        aspect-ratio:       1/1;
+        display:            flex;
+        flex-direction:     row;
+        flex-wrap:          wrap;
+        justify-content:    space-between;
+        align-content:      space-between;
+
+
+        .panel-item {
+
+            width:              calc(0.48*$thirdPlateWidth);
+            height:             calc(0.48*$thirdPlateWidth);
+            display:            flex;
+            justify-content:    center;
+            align-items:        center;
+            
+        }
+
+        h3 {
+            margin:             0;
+            padding:            0;
+            background: rgba($primaryColor, 0.8);
+            color: $primaryInverse;
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 2.5px );
+            -webkit-backdrop-filter: blur( 2.5px );
+            padding:            30px;
+            border:             4px solid $secondaryColor;
+        }
+
+        .panel-item.a {
+            background-image:       url($thirdPlateUrl1);
+            background-position:    center;
+            background-size:        cover;
+        }
+        .panel-item.b {
+            background-image:       url($thirdPlateUrl2);
+            background-position:    center;
+            background-size:        cover;
+        }
+        .panel-item.c {
+            background-image:       url($thirdPlateUrl3);
+            background-position:    center;
+            background-size:        cover;
+        }
+        .panel-item.d {
+            background-image:       url($thirdPlateUrl4);
+            background-position:    center;
+            background-size:        cover;
+        }
+    }
+    
+}
