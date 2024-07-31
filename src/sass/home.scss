@@ -2,9 +2,9 @@
 .main-plate {
     display:                    flex;
     flex-direction:             row;
-    width:                      calc(2*$mainPlateItemSize);
-    height:                     $mainPlateItemSize;
-    margin:                     4rem auto;
+    width:                      $headerWidth;
+    aspect-ratio:               2/1;
+    margin:                     5% auto;
     outline:                    1px solid black;
     background-color:           rgba(0,0,0, 0.1);
 
@@ -34,18 +34,11 @@
 
 }
 
-@media screen and (max-width: 45rem){
-    .main-plate {
-        flex-direction:     column;
-        height:             calc(2*$mainPlateItemSize);
-        width:              $mainPlateItemSize;
-    }
-}
 
 //! SECOND PLATE
 .second-plate {
 
-    width:      $secondPlateWidth;
+    width:      $headerWidth;
     margin:     auto;
 
     > h2 {
@@ -53,8 +46,9 @@
         color:                  $primaryInverse;
         font-size:              $panelTitleFontSize;
         padding:                $panelTitlePadding;
-
+        margin:                 0;
         text-align:             center;
+        margin-bottom:      3%;
     }
 
     .second-plate-panel {
@@ -62,13 +56,13 @@
         justify-content:        space-between;
 
         .panel-item{
-            width:              calc($secondPlateWidth*0.29);
+            width:              calc($headerWidth*0.5);
             aspect-ratio:       1/1;
             
 
             display:            flex;
             flex-direction:     column;
-            gap:                50px;
+            gap:                25%;
 
             h3, h4{
 
@@ -116,9 +110,8 @@
 // !THIRD PLATE
 
 .third-plate {
-    width:      $thirdPlateWidth;
+    width:      $headerWidth;
     margin:     auto;
-
 
     > h2 {
         background-color:   $primaryColor;
@@ -126,11 +119,14 @@
         font-size:          $panelTitleFontSize;
         padding:            $panelTitlePadding;
         text-align:         center;
+        margin:             0;
+        margin-top:         5%;
+        margin-bottom:      3%;
 
     }
 
     .third-plate-panel {
-        width:              $thirdPlateWidth;
+        width:              100%;
         aspect-ratio:       1/1;
         display:            flex;
         flex-direction:     row;
@@ -141,8 +137,8 @@
 
         .panel-item {
 
-            width:              calc(0.48*$thirdPlateWidth);
-            height:             calc(0.48*$thirdPlateWidth);
+            width:              48%;
+            height:             48%;
             display:            flex;
             justify-content:    center;
             align-items:        center;

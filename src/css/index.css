@@ -10,7 +10,7 @@ body, html {
 }
 
 header {
-  max-width: 50rem;
+  width: 60%;
   margin: auto;
   /* Header Part */
   /* Navigation Bar Part */
@@ -36,6 +36,9 @@ header .header-bar .header-slogan {
   color: #222831;
   font-size: 1.4rem;
 }
+header .header-bar .header-slogan em {
+  font-weight: 600;
+}
 header nav {
   /* Sizing and centering */
   display: flex;
@@ -49,18 +52,20 @@ header nav a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10px 0;
+  padding: 25px 0;
   /* Styling */
   text-decoration: none;
-  background-color: #111;
+  background-color: #141414;
   color: white;
   font-size: 1.2rem;
-  font-weight: 900;
-  transition: 0.3s;
+  font-weight: 550;
+  transition: 0.4s;
 }
 header nav a:hover {
-  background-color: #8d64ff;
-  color: white;
+  background-color: #b30086;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=index.css.map */

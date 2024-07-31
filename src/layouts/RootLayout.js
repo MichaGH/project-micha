@@ -9,16 +9,16 @@ const RootLayout = () => {
                         <h1>Voya inc.</h1>
                     </div>
                     <div className="header-slogan">
-                        <p>We satisfy the mothers</p>
+                        <p>We satisfy the <b><em>mothers</em></b></p>
                     </div>
                 </div>
 
                 <nav>
-                    <NavLink>Home</NavLink>
-                    <NavLink>Order</NavLink>
-                    <NavLink>F.A.Q.</NavLink>
-                    <NavLink>Reviews</NavLink>
-                    <NavLink>Contact</NavLink>         
+                    <NavLink to=''>Home</NavLink>
+                    <NavLink to='order'>Order</NavLink>
+                    <NavLink to='faq'>F.A.Q.</NavLink>
+                    <NavLink to='reviews'>Reviews</NavLink>
+                    <NavLink to='contact'>Contact</NavLink>         
                 </nav>
             </header>
             <main>

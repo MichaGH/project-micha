@@ -1,8 +1,8 @@
 //! GENERAL COLORING
-$primaryColor:          #111;
+$primaryColor:          #141414;
 $primaryInverse:        white;
-$primaryHoverColor:     #8d64ff;
-$primaryHoverInverse:   white;
+$primaryHoverColor:     #b30086;
+$primaryHoverInverse:   rgb(0, 0, 0);
 
 $secondaryColor:        #222831;
 $secondaryInverse:      $primaryColor;
@@ -26,8 +26,8 @@ $headerSloganFontSize:  1.4rem;
 // NAVBAR
 $navbarFontSize:        1.2rem;
 $navbarHeight:          2rem;
-$navbarPadding:         10px;
-$navbarFontWeight:      900;
+$navbarPadding:         25px;
+$navbarFontWeight:      550;
 
 //! home page
 // GENERAL PANEL STYLING AND SIZING
@@ -46,7 +46,7 @@ $test2: rgba(255, 0, 0, 0.08);
 
 // ! ROOT LAYOUT
 // Header and navbar width
-$headerWidth:               50rem;
+$headerWidth:               60%;
 
 // ! Home 
 // general
@@ -54,12 +54,11 @@ $plateTitleContentDiff:     10px; // space between title and content div
 $plateTitleHeight:          20px;
 
 // main plate
-$mainPlateItemSize:         calc($headerWidth / 2);
+
 $mainPlateImageUrl:         '../images/home/main_panel_mom.png';
 
 
 // secondary panel
-$secondPlateWidth:          calc(2*$mainPlateItemSize);
 $secondPlateUrl1:           '../images/home/second_panel/1.jpg';
 $secondPlateUrl2:           '../images/home/second_panel/2.jpg';
 $secondPlateUrl3:           '../images/home/second_panel/3.jpg';
@@ -72,7 +71,7 @@ $secondPanelDescBgColor:   rgba(0,0,0,0.5);
 
 // tertiary panel
 
-$thirdPlateWidth:           $secondPlateWidth;
+
 
 $thirdPlateUrl1:            '../images/home/third_panel/1.jpg';
 $thirdPlateUrl2:            '../images/home/third_panel/2.jpg';

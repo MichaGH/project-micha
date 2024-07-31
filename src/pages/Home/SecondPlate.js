@@ -1,7 +1,7 @@
 const SecondPlate = () => {
     return (
         <div className="second-plate">
-            <h2>International Mom Fuckers</h2>
+            <h2>Internationally certified Motherfuckers</h2>
             <div className="second-plate-panel">
                 <div className="panel-item a">
                 <h3>1</h3>
