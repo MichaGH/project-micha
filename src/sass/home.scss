@@ -1,4 +1,28 @@
 @import '__variables';
+
+@keyframes changeBg{
+    0% {
+        background:                 rgba(white, 0.8);
+    }
+    50% {
+        background:                 rgba(white, 0.4);
+    }
+    100% {
+        background:                 rgba(white, 0.8);
+    }
+}
+
+
+.main-plate, .second-plate, .third-plate {
+    h2 {
+        font-size: $h2size;
+    }
+
+    h3 {
+        font-size: $h3size;
+    }
+}
+
 .main-plate {
     display:                    flex;
     flex-direction:             row;
@@ -29,6 +53,32 @@
         background-image:       url($mainPlateImageUrl);
         background-position:    center;
         background-size:        cover;
+
+        button {
+            animation:                  changeBg 2s infinite linear;
+            transition-duration:        1s;
+            color:                      black;
+            box-shadow:                 0 8px 32px 0 rgba( 0, 0, 0, 0.6 );
+            backdrop-filter:            blur( 2.5px );
+            -webkit-backdrop-filter:    blur( 2.5px );
+            font-size:                  28px;
+            padding:                    10px 20px;
+            font-weight:                600;
+            border:                     2px solid black;
+
+
+            cursor: pointer;
+
+
+        }
+
+        button:hover {
+            transition-duration:        1s;
+            box-shadow:                 0 8px 40px 0 rgba( 0, 0, 0, 0.9 );
+            background-color:           rgba(black, 0.8) !important;
+            color:                      white !important;
+
+        }
     }
 
 
@@ -44,11 +94,10 @@
     > h2 {
         background-color:       $primaryColor;
         color:                  $primaryInverse;
-        font-size:              $panelTitleFontSize;
         padding:                $panelTitlePadding;
         margin:                 0;
         text-align:             center;
-        margin-bottom:      3%;
+        margin-bottom:          3%;
     }
 
     .second-plate-panel {
@@ -64,28 +113,17 @@
             flex-direction:     column;
             gap:                25%;
 
-            h3, h4{
-
-                text-align:     center;
-                margin:         0;
-                padding:        0;
-            }
-
             h3 {
-                color: $primaryInverse;
-                padding: 15px;
-            }
-
-            h4 {
-                background: rgba($primaryColor, 0.8);
-                color: $primaryInverse;
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                backdrop-filter: blur( 2.5px );
-                -webkit-backdrop-filter: blur( 2.5px );
-                padding: 10px 0;
-                display:                flex;
-                justify-content:        center;
-                align-items:            center;
+                background:                 rgba($primaryColor, 0.8);
+                color:                      $primaryInverse;
+                box-shadow:                 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
+                backdrop-filter:            blur( 2.5px );
+                -webkit-backdrop-filter:    blur( 2.5px );
+                padding:                    18px 0;
+                margin:                     auto 0;
+                display:                    flex;
+                justify-content:            center;
+                align-items:                center;
             }
         }
 
@@ -116,7 +154,6 @@
     > h2 {
         background-color:   $primaryColor;
         color:              $primaryInverse;
-        font-size:          $panelTitleFontSize;
         padding:            $panelTitlePadding;
         text-align:         center;
         margin:             0;
@@ -146,15 +183,15 @@
         }
 
         h3 {
-            margin:             0;
-            padding:            0;
-            background: rgba($primaryColor, 0.8);
-            color: $primaryInverse;
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 2.5px );
-            -webkit-backdrop-filter: blur( 2.5px );
-            padding:            30px;
-            border:             4px solid $secondaryColor;
+            margin:                     0;
+            padding:                    0;
+            background:                 rgba($primaryColor, 0.7);
+            color:                      $primaryInverse;
+            box-shadow:                 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter:            blur( 2.5px );
+            -webkit-backdrop-filter:    blur( 2.5px );
+            padding:                    30px;
+            border:                     4px solid $primaryColor;
         }
 
         .panel-item.a {

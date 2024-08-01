@@ -27,7 +27,7 @@ header .header-bar .header-title, header .header-bar .header-slogan {
 }
 header .header-bar .header-title {
   color: #222831;
-  font-size: 2rem;
+  font-size: 2.2rem;
   background: -webkit-linear-gradient(#008de4, #3A4750);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -36,7 +36,7 @@ header .header-bar .header-slogan {
   color: #222831;
   font-size: 1.4rem;
 }
-header .header-bar .header-slogan em {
+header .header-bar .header-slogan b {
   font-weight: 600;
 }
 header nav {
@@ -52,17 +52,17 @@ header nav a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 25px 0;
+  padding: 12px 0;
   /* Styling */
   text-decoration: none;
   background-color: #141414;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 550;
   transition: 0.4s;
 }
 header nav a:hover {
-  background-color: #b30086;
+  background-color: #008de4;
   color: rgb(0, 0, 0);
   font-weight: 900;
   letter-spacing: 1px;

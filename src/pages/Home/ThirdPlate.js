@@ -5,22 +5,22 @@ const ThirdPlate = () => {
             <div className="third-plate-panel">
                 <div className="panel-item a">
                     <h3>
-                        Get pictures
+                        Pictures
                     </h3>
                 </div>
                 <div className="panel-item b">
                     <h3>
-                        Get Video
+                        Video
                     </h3>
                 </div>
                 <div className="panel-item c">
                     <h3>
-                        Own a certificate
+                        Certificate
                     </h3>
                 </div>
                 <div className="panel-item d">
                     <h3>
-                        Eye Witness Testimony
+                        Testimony
                     </h3>
                 </div>
             </div>

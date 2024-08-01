@@ -1,7 +1,7 @@
 //! GENERAL COLORING
 $primaryColor:          #141414;
 $primaryInverse:        white;
-$primaryHoverColor:     #b30086;
+$primaryHoverColor:     #008de4;
 $primaryHoverInverse:   rgb(0, 0, 0);
 
 $secondaryColor:        #222831;
@@ -20,18 +20,19 @@ $pageSloganColor:       $secondaryColor;
 
 //! for root layout
 // HEADER
-$headerTitleFontSize:   2rem;
+$headerTitleFontSize:   2.2rem;
 $headerSloganFontSize:  1.4rem;
 
 // NAVBAR
-$navbarFontSize:        1.2rem;
+$navbarFontSize:        1.4rem;
 $navbarHeight:          2rem;
 $navbarPadding:         25px;
 $navbarFontWeight:      550;
 
 //! home page
 // GENERAL PANEL STYLING AND SIZING
-$panelTitleFontSize:    2rem;
+$h2size:                2.2rem;
+$h3size:                1.4rem;
 $panelTitlePadding:     20px;
 
 // FIRST PANEL

@@ -43,8 +43,9 @@ header {
             color:              $pageSloganColor;
             font-size:          $headerSloganFontSize;
 
-            em {
+            b {
                 font-weight: 600;
+                
             }
         }
     }
@@ -63,7 +64,7 @@ header {
             justify-content:    center;
             align-items:        center;
             height:             100%;
-            padding:            $navbarPadding 0;
+            padding:            12px 0;
 
 
             /* Styling */

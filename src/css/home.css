@@ -1,3 +1,21 @@
+@keyframes changeBg {
+  0% {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+.main-plate h2, .second-plate h2, .third-plate h2 {
+  font-size: 2.2rem;
+}
+.main-plate h3, .second-plate h3, .third-plate h3 {
+  font-size: 1.4rem;
+}
+
 .main-plate {
   display: flex;
   flex-direction: row;
@@ -26,6 +44,25 @@
   background-position: center;
   background-size: cover;
 }
+.main-plate .item.b button {
+  animation: changeBg 2s infinite linear;
+  transition-duration: 1s;
+  color: black;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  font-size: 28px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.main-plate .item.b button:hover {
+  transition-duration: 1s;
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+}
 
 .second-plate {
   width: 60%;
@@ -34,7 +71,6 @@
 .second-plate > h2 {
   background-color: #141414;
   color: white;
-  font-size: 2rem;
   padding: 20px;
   margin: 0;
   text-align: center;
@@ -51,22 +87,14 @@
   flex-direction: column;
   gap: 25%;
 }
-.second-plate .second-plate-panel .panel-item h3, .second-plate .second-plate-panel .panel-item h4 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
 .second-plate .second-plate-panel .panel-item h3 {
-  color: white;
-  padding: 15px;
-}
-.second-plate .second-plate-panel .panel-item h4 {
   background: rgba(20, 20, 20, 0.8);
   color: white;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  padding: 10px 0;
+  padding: 18px 0;
+  margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +122,6 @@
 .third-plate > h2 {
   background-color: #141414;
   color: white;
-  font-size: 2rem;
   padding: 20px;
   text-align: center;
   margin: 0;
@@ -120,13 +147,13 @@
 .third-plate .third-plate-panel h3 {
   margin: 0;
   padding: 0;
-  background: rgba(20, 20, 20, 0.8);
+  background: rgba(20, 20, 20, 0.7);
   color: white;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   padding: 30px;
-  border: 4px solid #222831;
+  border: 4px solid #141414;
 }
 .third-plate .third-plate-panel .panel-item.a {
   background-image: url("../images/home/third_panel/1.jpg");
