@@ -9,6 +9,10 @@ body, html {
   background-color: #eeeeee;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 header {
   width: 60%;
   margin: auto;
