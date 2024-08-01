@@ -3,7 +3,7 @@ const MainPlate = () => {
         <div className="main-plate">
             <div className="item a">
                 <h2>
-                Need to fuck someones mom?
+                Need to Fuck Someones Mom?
                 </h2>
             </div>
             <div className="item b">
