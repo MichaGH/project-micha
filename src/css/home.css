@@ -100,17 +100,17 @@
   align-items: center;
 }
 .second-plate .second-plate-panel .panel-item.a {
-  background-image: url("../images/home/second_panel/1.jpg");
+  background-image: url("../images/home/second_panel/1.png");
   background-position: center;
   background-size: cover;
 }
 .second-plate .second-plate-panel .panel-item.b {
-  background-image: url("../images/home/second_panel/2.jpg");
+  background-image: url("../images/home/second_panel/2.png");
   background-position: center;
   background-size: cover;
 }
 .second-plate .second-plate-panel .panel-item.c {
-  background-image: url("../images/home/second_panel/3.jpg");
+  background-image: url("../images/home/second_panel/3.png");
   background-position: center;
   background-size: cover;
 }

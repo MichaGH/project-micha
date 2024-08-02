@@ -10,6 +10,10 @@ body, html {
 }
 
 html {
+  /* 
+  When switching from home to page that doesnt have scroll bar, whole page moved
+  This fixes it
+  */
   overflow-y: scroll;
 }
 
