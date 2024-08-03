@@ -1,11 +1,11 @@
 //! GENERAL COLORING
-$primaryColor:          #141414;
+$primaryColor:          #020617;
 $primaryInverse:        white;
 $primaryHoverColor:     #008de4;
 $primaryHoverInverse:   rgb(0, 0, 0);
 
-$secondaryColor:        #222831;
-$secondaryInverse:      $primaryColor;
+$secondaryColor:        #020617;
+$secondaryInverse:      white;
 
 $tertiaryColor:         #303841;
 $tertiaryInverse:       #ffffff;
@@ -33,7 +33,7 @@ $navbarFontWeight:      550;
 // GENERAL PANEL STYLING AND SIZING
 $h2size:                2.2rem;
 $h3size:                1.4rem;
-$panelTitlePadding:     20px;
+$panelTitlePadding:     10px;
 
 // FIRST PANEL
 
@@ -50,13 +50,10 @@ $test2: rgba(255, 0, 0, 0.08);
 $headerWidth:               60%;
 
 // ! Home 
-// general
-$plateTitleContentDiff:     10px; // space between title and content div
-$plateTitleHeight:          20px;
 
 // main plate
 
-$mainPlateImageUrl:         '../images/home/main_panel_mom.png';
+$mainPlateImageUrl:         '../images/home/main_panel_mom_colored.png';
 
 
 // secondary panel
